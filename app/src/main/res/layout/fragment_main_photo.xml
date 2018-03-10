@@ -1,0 +1,144 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.6"
+
+        >
+
+        <ImageView
+            android:id="@+id/iv_photo_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:visibility="invisible"
+            />
+
+        <TextView
+            android:id="@+id/tv_error_photo_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textSize="16dp"
+            android:textColor="@color/colorPrimary"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:visibility="invisible"
+            android:text="@string/tv_photo_main"
+            fontPath="fonts/LeagueSpartan.otf"
+            />
+
+        <ProgressBar
+            android:id="@+id/pb_loading_indicator_image"
+            android:layout_height="84dp"
+            android:layout_width="84dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.3">
+
+        <TextView
+            android:id="@+id/tv_weather_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="@string/tv_weather_city"
+            android:textSize="28sp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/colorPrimary"
+            android:visibility="invisible"
+            fontPath="fonts/LeagueSpartan.otf"/>
+
+
+        <TextView
+            android:id="@+id/tv_weather_phrase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="@string/tv_weather_prase"
+            android:layout_centerHorizontal="true"
+            android:textSize="21sp"
+            android:textColor="@color/colorPrimary"
+            android:visibility="invisible"
+            android:layout_below="@+id/tv_weather_city"
+            fontPath="fonts/LeagueSpartan.otf"/>
+
+        <TextView
+            android:id="@+id/tv_weather_temperature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="@string/tv_current_temperature"
+            android:layout_centerHorizontal="true"
+            android:textSize="21sp"
+            android:textColor="@color/colorPrimary"
+            android:visibility="invisible"
+            android:layout_below="@+id/tv_weather_phrase"
+            fontPath="fonts/LeagueSpartan.otf"/>
+
+        <TextView
+            android:id="@+id/tv_weather_c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="°C"
+            android:layout_centerHorizontal="true"
+            android:textSize="21sp"
+            android:textColor="@color/colorPrimary"
+            android:visibility="invisible"
+            android:layout_toRightOf="@+id/tv_weather_temperature"
+            android:layout_below="@+id/tv_weather_phrase"
+            fontPath="fonts/LeagueSpartan.otf"/>
+
+        <TextView
+            android:id="@+id/tv_error_weather_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:visibility="invisible"
+            android:text="@string/tv_photo_main"
+            fontPath="fonts/LeagueSpartan.otf"
+            />
+
+        <ProgressBar
+            android:id="@+id/pb_loading_indicator_weather"
+            android:layout_height="84dp"
+            android:layout_width="84dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

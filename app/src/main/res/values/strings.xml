@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Great Weather App</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tv_photo_main">Error: no se pudo cargar la iamgen</string>
+    <string name="tv_weather_city">Ciudad</string>
+    <string name="tv_weather_prase">Clima Actual</string>
+    <string name="tv_current_temperature">300°</string>
+    <string name="tv_main_text">El siguiente usuario tomo esta hermosa foto</string>
+</resources>
